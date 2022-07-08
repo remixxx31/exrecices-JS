@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <label for="">Nom: </label>
+  <input type="text" id="nom"/>
+  <label> Prénom: </label>
+  <input type="text" id="prenom"/>
+
+
+  <script>
+    let nom =document.querySelector("#nom");
+    let prenom =document.querySelector("#prenom");
+    nom.setAttribute("style", "background-color:red");
+    prenom.setAttribute("style", "background-color:orange");
+   /* ou let nom.style.backgroundColor = "red";
+    let prenom.style.backgroundColor = "orange";
+    */
+  </script>
+</body>
+</html>
