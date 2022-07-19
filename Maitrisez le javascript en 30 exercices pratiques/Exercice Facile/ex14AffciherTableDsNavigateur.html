@@ -7,17 +7,10 @@
   <title>Document</title>
 </head>
 <body>
-<button onclick="table()">Table de </button>
+<button>Table de </button>
   <div>Cliquez sur un boutton pour afficher la table de multiplication </div>
 </body>
-<script>
-  var readline = require("readline-sync");
-  function table(){
-    let saisieTable = parseInt(readline.question("Vous voulez connaitre la table de multiplication de quel chiffre?"));
-    for (let i = 0; i <= 10; i ++){
-      let result = saisieTable * i;
-      console.log(`${saisieTable} X ${i} = ${result}`);
-    }
-  }
+<script src="ex14js.js">
+ 
 </script>
 </html>
