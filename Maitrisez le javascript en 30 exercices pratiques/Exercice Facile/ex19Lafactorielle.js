@@ -5,3 +5,4 @@ for (let i = 1; i <= saisie; i++){
   factorielle *= i;  
   console.log(`Etape ${i} : ${factorielle}`);
 }
+console.log(`Le résultat de la factorielle de ${saisie}: ${factorielle}`);
