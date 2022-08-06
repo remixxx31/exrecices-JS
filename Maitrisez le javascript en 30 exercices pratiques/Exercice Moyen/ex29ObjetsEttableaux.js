@@ -12,8 +12,8 @@ let sportif1 = {
     console.log(txt);
   },
   getForce: function () {
-    let force = (this.taille * this.poids) / this.age;
-    console.log(`La force de ${this.nom} est de ${force}`);
+    let force = 0;
+    return force = (this.taille * this.poids) / this.age;
   },
 };
 
@@ -30,8 +30,8 @@ let sportif2 = {
     console.log(txt);
   },
   getForce: function () {
-    let force = (this.taille * this.poids) / this.age;
-    console.log(`La force de ${this.nom} est de ${force}`);
+    let force = 0;
+    return force = (this.taille * this.poids) / this.age;
   },
 };
 
@@ -41,4 +41,14 @@ let sportif2 = {
 // }
 // getForce(sportif1);
 sportif1.affichage();
-sportif1.getForce();
+console.log(sportif1.getForce());
+// sportif2.getForce();
+
+let forceToto = sportif1.getForce();
+let forceM = sportif2.getForce();
+
+if (forceToto > forceM) {
+  console.log("Toto est plus fort que Marcel !");
+} else {
+  console.log("Marcel est plus fort que Toto !");
+}
